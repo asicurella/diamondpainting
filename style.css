@@ -52,7 +52,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-    background-image: url("/photos/diamond-hero-mobile-bg.svg");
+    background-image: url("./photos/diamond-hero-mobile-bg.svg");
     
 }
 .hero-contents{
