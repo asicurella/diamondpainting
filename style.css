@@ -12,6 +12,7 @@ body {
     overflow: hidden; /* Disable scrolling by default */
 }
 /* Preloader css */
+
 .preloader-container {
     min-height: 100dvh;
     top: 0;
@@ -45,7 +46,7 @@ body {
 .preload-text{
     transform: translateY(1180%) translateX(-5%);
 }
-.hero-container-mobile{
+.hero-container{
     margin-top: 4.8em;
     min-height: 80vh;
     overflow: clip;
@@ -53,7 +54,6 @@ body {
     background-size: cover;
     position: relative;
     background-image: url("./photos/diamond-hero-mobile-bg.svg");
-    
 }
 .hero-contents{
     display: flex;
@@ -76,6 +76,8 @@ body {
     color: black;
 
 }
+
+
 .barrie-location{
     background-color: whitesmoke;
     padding: 2em;
@@ -152,6 +154,22 @@ body {
     padding: 1em;
     
 }
+.client-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1em;
+    margin-top: 1em;
+    align-content: center;
+    
+}
+.client-item{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    
+}
 .service-item p{
     margin-bottom: 0;
 }
@@ -159,10 +177,11 @@ body {
     color: #9DCCD4;
 }
 .home-slideshow{
-    background-color: #39848A;
+    background-color: #d0d1d2;
     margin-top: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-bottom: 2em;
 }
 .slideshow-container{
     margin-left: 2em;
@@ -170,19 +189,122 @@ body {
     margin-bottom: 4em;
 }
 .slideshow-h{
-    color: white;
+    color: black;
     font-size: 22pt;
     
     
 }
 .contact-form{
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 4em;
-    margin-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 4em;
+    padding-top: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
+    
 }
 .contact-h{
     padding-bottom: 1em;
+}
+.slideshow-pc{
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+  
+    .hero-container{
+        min-height: 72vh;
+        background-image: url("./photos/diamond-hero-pc.svg");
+        background-position: center;
+    }
+    .hero-contents{
+        display: flex;
+        flex-direction: column;
+        transform: translate(60%, 150%);
+        width: 70%;
+        align-items: center;
+        gap: 1rem;
+    }
+    .barrie-location{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0.5em;
+        padding-left: 8em;
+        padding-right: 8em;
+        border-bottom: solid black 0.2px;
+        border-top: solid black 0.2px;
+        
+    }
+    .quality-card{
+        grid-template-columns: none;
+        justify-content: center;
+        padding-top: 0;
+        gap: 1em;
+        border-left: solid 0.5px rgb(56, 55, 55);
+    }
+    .location-card{
+        grid-template-columns: none;
+        justify-content: center;
+        padding-top: 0;
+        gap: 1em;
+    }
+    .about-us{
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding-left: 30em;
+        padding-right: 30em;
+    }
+    .service-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 1em;
+        margin-top: 1em;
+        align-content: center;
+        padding-left: 17em;
+        padding-right: 17em;
+        
+    }
+    .service-item{
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        flex-direction: column;
+        padding: 1em;
+       
+    }
+    .service-item img{
+        height: 5em !important;
+    }
+    .client-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 35em;
+        padding-right: 35em;
+        
+    }
+    .home-clients{
+        padding-top: 5em;
+    }
+    .slideshow-container{
+        margin-left: 40em;
+        margin-right: 40em;
+        margin-bottom: 4em;
+        
+    }
+  .slideshow-container img{
+    
+
+  }
+  .contact-form{
+    padding-left: 30em;
+    padding-right: 30em;
+    padding-bottom: 4em;
+    padding-top: 1em;
+    padding-top: 2em;
+    background-color: whitesmoke(207, 207, 207);
+}
+.contact-form-h{
+    margin: 5em;
+}
 }
